@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet3-Ohmyfood-Openclassrooms-MaureenMartel",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maureenmartel/MaureenMartel_3_15012022.git"
+  },
+  "author": "MaureenMartel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maureenmartel/MaureenMartel_3_15012022/issues"
+  },
+  "homepage": "https://github.com/Maureenmartel/MaureenMartel_3_15012022#readme"
+}
