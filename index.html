@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7cf134afba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css"/>
     <title>Oh My Food</title>
@@ -32,22 +32,23 @@
 <section class="filters">
     <h2>Fonctionnement</h2>
     <div class="filters-restaurants">
-        <!--icones-->
-        <p>Choisissez un restaurant</p>
+        <i class="fas fa-mobile-alt"></i>
+        <p><strong>Choisissez un restaurant</strong></p>
     </div>
     <div class="filters-menu">
-        <!--icones-->
-        <p>Composez votre menu</p>
+        <i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i>
+        <p><strong>Composez votre menu</strong></p>
     </div>
     <div class="filters-validation">
-        <!--icones-->
-        <p>Dégutez au restaurant</p>
+        <i class="fas fa-store"></i>
+        <p><strong>Dégutez au restaurant</strong></p>
     </div>
 </section>
 <!--Section Restaurants-->
 <section class="restaurants">
     <h2>Restaurants</h2>
     <div class="card-1">
+        <div class="btn-new">Nouveau</div>
         <div class="card-img">
             <img class="card-img-1" src="img/restaurants/jay-wennington.jpg" alt="Restaurant La palette du goût"/>
         </div>
@@ -55,14 +56,21 @@
             <h3>La palette du goût</h3>
             <p>Ménilmontant</p>
         </div>
+        <div class="btn-heart">
+            <i class="far fa-heart"></i>
+        </div>
     </div>
     <div class="card-2">
+        <div class="btn-new">Nouveau</div>
         <div class="card-img">
             <img class="card-img-2" src="img/restaurants/stil.jpg" alt="Restaurant La note enchantée"/>
         </div>
         <div class="card-title">
             <h3>La note enchantée</h3>
             <p>Charonne</p>
+        </div>
+        <div class="btn-heart">
+            <i class="far fa-heart"></i>
         </div>
     </div>
     <div class="card-3">
@@ -73,6 +81,9 @@
             <h3>À la française</h3>
             <p>Cité Rouge</p>
         </div>
+        <div class="btn-heart">
+            <i class="far fa-heart"></i>
+        </div>
     </div>
     <div class="card-4">
         <div class="card-img">
@@ -82,14 +93,17 @@
             <h3>Le délice des sens</h3>
             <p>Folie-Méricourt</p>
         </div>
+        <div class="btn-heart">
+            <i class="far fa-heart"></i>
+        </div>
     </div>
 </section>
 <footer>
-    <p>ohmyfood</p>
-    <a class="footer-links" href="#">Proposer un restaurant</a><!--icones-->
-    <a class="footer-links" href="#">Devenir partenaire</a><!--icones-->
-    <a class="footer-links" href="#">Mentions légales</a>
-    <a class="footer-links" href="#">Contact</a><!--renvoi sur mail-->
+    <p><strong>ohmyfood</strong></p>
+    <p><i class="fas fa-utensils"></i><a class="footer-links" href="#">Proposer un restaurant</a></p>
+    <p><i class="fas fa-hands-helping"></i><a class="footer-links" href="#">Devenir partenaire</a></p>
+    <p><a class="footer-links" href="#">Mentions légales</a></p>
+    <p><a class="footer-links" href="mailto:contact@ohmyfood.fr">Contact</a></p>
 </footer>        
 </body>
 </html>
