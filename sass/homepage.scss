@@ -78,7 +78,7 @@ header {
         cursor: pointer;
       }
   }
-  
+
   //Fonctionnement--------------------------------->
   .functioning {
     width: 100%;
@@ -137,5 +137,82 @@ header {
     margin-right: -1px;
     color: $primary-color;
   }
+
+  //Restaurants--------------------------->
+  .restaurants {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h2 {
+      margin-left: 20px;
+      align-self: flex-start;
+    } 
+  }
+
+  .card {
+    width: 90%;
+    height: 250px;
+    margin: 10px;
+    box-shadow: 0 5px 10px 5px #e8e8e8;
+    border-radius: 15px;
+    position: relative;
+
+      & .new {
+        width: 78px;
+        height: 30px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border-radius: 3px;
+        background-color: $tertiary-color;
+      }
+
+      & a {
+        text-decoration: none;
+        color: black;
+      }
+  }
+
+  .card__img {
+    width: 100%;
+    height: 180px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    object-fit: cover;
+  }
+
+  .object-position-1 {
+    object-position: center bottom;
+  }
+
+  .object-position-2 {
+    object-position: 50% 60%;
+  }
+
+  .card__info {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+
+      & h3 {
+        margin: 8px 0 0 15px;
+      }
+
+      & p {
+        margin: 5px 0 0 15px;
+      }
+
+      & i {
+        margin-top: 20px;
+        font-size: 25px;
+      }
+  }
+  
 
 }

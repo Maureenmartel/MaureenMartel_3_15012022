@@ -34,17 +34,17 @@
   <h2 class="secondary-title">Fonctionnement</h2>
     <div class="function-list">
       <div class="functioning__step">
-        <div class="numbers positioned">1</div>
+        <span class="numbers positioned">1</span>
         <i class="fas fa-mobile-alt"></i>
         <p><strong>Choisissez un restaurant</strong></p>
       </div>
       <div class="functioning__step">
-        <div class="numbers positioned">2</div>
+        <span class="numbers positioned">2</span> 
         <i class="fas fa-list-ul"></i>
         <p><strong>Composez votre menu</strong></p>
       </div>
       <div class="functioning__step">
-        <div class="numbers positioned">3</div>
+        <span class="numbers positioned">3</span>
         <i class="fas fa-store"></i>
         <p><strong>Dégutez au restaurant</strong></p>
       </div>
@@ -53,65 +53,56 @@
 <!--Section Restaurants-->
 <section class="restaurants">
   <h2 class="secondary-title">Restaurants</h2>
-  <article>
-    <a href="la-palette-du-gout.html">
-      <figure class="card">
-        <p class="new">Nouveau</p>
-        <img class="card__img" src="public/img/restaurants/jay-wennington.jpg" alt="Restaurant La palette du goût"/>
+    <figure class="card">
+      <a href="la-palette-du-gout.html"><!--laisser le a comme element parent de ma carte et le passer en display block-->
+        <img class="card__img object-position-1" src="public/img/restaurants/jay-wennington.jpg" alt="Restaurant La palette du goût"/>
+        <p class="new">Nouveau</p>      <!--a sortir du flux naturel de la page avec une position absolue (ex: top 1 em right 1em)-->
         <figcaption class="card__info">
           <div>
             <h3>La palette du goût</h3>
             <p>Ménilmontant</p>
           </div>
-          <i class="far fa-heart"></i>
-        </figcaption>
-      </figure>
-    </a>
-  </article>
-  <article>
-    <a href="la-note-enchantee.html"></a>
-    <div class="card-2">
-      <figure class="card__img">
+          <i class="far fa-heart"></i>  <!--modifier la structure et utiliser une figure pour une image et une legende only, un h3 et un p n'ont pas vocation a etre dans un figcaption-->
+        </figcaption>                   <!--a verifier avec le validateur W3C avant modif-->
+      </a>
+    </figure>
+    <figure class="card">
+      <a href="la-note-enchantee.html">
+        <img class="card__img object-position-2" src="public/img/restaurants/stil.jpg" alt="Restaurant La note enchantée"/>
         <p class="new">Nouveau</p>
-        <img class="card__img-2" src="public/img/restaurants/stil.jpg" alt="Restaurant La note enchantée"/>
-        <figcaption class="card__title">
+        <figcaption class="card__info">
           <div>
             <h3>La note enchantée</h3>
             <p>Charonne</p>
           </div>
           <i class="far fa-heart"></i>
         </figcaption>
-      </figure>
-    </div>
-  </a>
-  <a href="a-la-francaise.html"></a>
-    <div class="card-3">
-      <figure class="card-img">
-        <img class="card-img-3" src="public/img/restaurants/toa-heftiba.jpg" alt="Restaurant À la française"/>
-        <figcaption class="card-title">
+      </a>
+    </figure>
+    <figure class="card">
+      <a href="a-la-francaise.html">
+        <img class="card__img object-position-1" src="public/img/restaurants/toa-heftiba.jpg" alt="Restaurant À la française"/>
+        <figcaption class="card__info">
           <div>
             <h3>À la française</h3>
             <p>Cité Rouge</p>
           </div>
           <i class="far fa-heart"></i>
         </figcaption>
-      </figure>
-    </div>
-  </a>
-  <a href="le-delice-des-sens.html"></a>
-    <div class="card-4">
-      <figure class="card-img">
-        <img class="card-img-4" src="public/img/restaurants/louis-hansel.jpg" alt="Restaurant Le délice des sens"/>
-        <figcaption class="card-title">
+      </a>
+    </figure>
+    <figure class="card">
+      <a href="le-delice-des-sens.html">
+        <img class="card__img object-position-1" src="public/img/restaurants/louis-hansel.jpg" alt="Restaurant Le délice des sens"/>
+        <figcaption class="card__info">
           <div>
             <h3>Le délice des sens</h3>
             <p>Folie-Méricourt</p>
           </div>
           <i class="far fa-heart"></i>
         </figcaption>
-      </figure>
-    </div>
-  </a>
+      </a>
+    </figure>
 </section>
 <footer>
   <p><strong>ohmyfood</strong></p>
