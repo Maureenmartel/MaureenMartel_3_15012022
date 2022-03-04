@@ -9,7 +9,7 @@ html, body {
   //border: solid 1px red;
 }
 
-header {
+.header-home {
   @include flex-column-center;
 }
 
