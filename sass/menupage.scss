@@ -10,7 +10,7 @@ html, body {
 }
 
 @media (max-width:768px) {
-  //Header ------------------------------------------------->
+  //Header
 	.menupage {
     display: flex;
     align-items: flex-start;
@@ -26,7 +26,7 @@ html, body {
         padding: 30px 0 20px 50px;
       }
   }
-  //Section restaurant ------------------------------------->
+  //Section restaurant
   .selected {
     display: flex;
     flex-direction: column;
@@ -63,5 +63,94 @@ html, body {
         padding-top: 35px;
       }
   }
-  //Section plats ----------------------------------------->
+  //Section plats
+  .block-course {
+    display: flex;
+    background-color: $back-color-white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+    padding-top: 10px;
+
+      h2 {
+        font-weight: lighter;
+        //border-bottom: solid 4px $tertiary-color;
+        align-self: flex-start;
+        margin-left: 20px;
+        margin-bottom: 5px;
+      }
+
+      hr {
+        width: 60px;
+        height: 4px;
+        background-color: $tertiary-color;
+        border: solid 1px $tertiary-color;
+        margin: 0 0 10px 20px;
+        align-self: flex-start;
+      }
+  }
+
+  .meal {
+    width: 90%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 3px lightgray;
+    overflow: hidden;
+  }
+
+  .meal__info {
+    display: flex;
+    align-items: center;
+    flex: 1 1 260px;
+    min-width: 260px;
+    padding: 15px 10px;
+  }
+      
+  .meal__text {
+    flex-grow: 1;
+    flex-basis: 215px;
+    overflow: hidden;
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+      p {
+        font-size: 15px;
+        text-overflow: ellipsis;
+        margin-top: 2%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+  }
+  
+  .price {
+    flex-basis: 45px;
+    text-align: center;
+    font-weight: 700;
+    align-self: flex-end;
+  }
+
+  .checkbox {
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiary-color;
+    margin-right: -60px;
+    width: 60px;
+  }
+
+  //bouton commander
+  
 }
