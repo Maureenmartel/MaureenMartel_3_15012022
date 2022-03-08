@@ -18,3 +18,12 @@
   color: white;
   background-image: linear-gradient($secondary-color,$primary-color);
 }
+
+@mixin btn-gradient-grow {
+  border-width: 0px;
+  border-radius: 45px;
+  background-color: $primary-color;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient($secondary-color,$primary-color);
+}
