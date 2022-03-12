@@ -28,14 +28,13 @@
   background-image: linear-gradient($secondary-color,$primary-color);
 }
 //Media Queries
-
 @mixin tablet {
   @media (min-width:768px) {
     @content;
   }
 }
 
-@mixin Desktop {
+@mixin desktop {
   @media (min-width:992px) {
     @content;
   }

@@ -18,15 +18,27 @@ html, body {
 .menu {
   @include flex-column-center;
   width: 100%;
-}
 
-.logo {
-  width: 45%;
-  padding-top: 20px;
-
-  @include tablet {
-      width: 60%;
+  h1 {
+    width: 510px;
+    padding-top: 10px;
+    font-family: $title-font;
+    font-size: 45px;
+    margin: 0;
+  
+    @include tablet {
+      padding-top: 20px;
       padding-bottom: 20px;
+      font-size: 65px;
+      background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    @include desktop {
+      font-size: 90px;
+    }
   }
 }
 
@@ -44,13 +56,28 @@ html, body {
   }
 }
 
-.info {
-  text-align: center;
-  margin: 0 30px 10px 30px;
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @include tablet {
+  @include desktop {
+    flex-direction: row;
+  }
+
+  .info {
     text-align: center;
-    margin: 0 30px 10px 30px;    
+    margin: 0 30px 10px 30px;
+  
+    @include tablet {
+      text-align: center;
+      margin: 0 30px 10px 30px;    
+    }
+
+    @include desktop {
+      width: 38%;
+      margin-left: 12%;
+    }
   }
 }
 
@@ -125,12 +152,20 @@ html, body {
 .functioning {
   width: 100%;
   padding : 50px 0 30px 20px;
+
+  @include desktop {
+    width: 50%;
+  }
 }
 
 .function-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include desktop {
+    width: 100%;
+  }
 }
 
 .functioning__step {
@@ -149,6 +184,12 @@ html, body {
       font-size: 28px;
     }
 
+    @include desktop {
+      width: 74%;
+      align-self: flex-start;
+      font-size: 28px;
+    }
+
     &:nth-child(3) {
       background-color: lighten($color: $primary-color, $amount: 36%)
     }
@@ -164,6 +205,10 @@ html, body {
 
 .secondary-title {
   font-size: 32px;
+
+  @include desktop {
+    padding-left: 137px;
+  }
 }
 
 .numbers {
@@ -220,16 +265,31 @@ html, body {
     padding-bottom: 40px;
     margin-bottom: 0;
 
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     h2 {
       padding-left: 20px;
       padding-top: 30px;
       align-self: flex-start;
+
+      @include desktop {
+        width: 100%;
+        padding-left: 12%;
+      }
     } 
 
     a {
       width: 100%;
       text-decoration: none;
       color: black;
+
+      @include desktop {
+        width: 40%;
+      }
     }
 }
 .card {
@@ -244,6 +304,10 @@ html, body {
 
     @include tablet {
       border-radius: 20px;
+    }
+
+    @include desktop {
+    
     }
 
     .new {
@@ -354,13 +418,13 @@ footer {
     }
 
     p:nth-child(1) {
-    font-family: $title-font;
-    font-size: 20px;
-    padding-top: 20px;
+      font-family: $title-font;
+      font-size: 20px;
+      padding-top: 20px;
 
-    @include tablet {
-      font-size: 40px;
-    }
+      @include tablet {
+        font-size: 40px;
+      }
     }
 }
 
