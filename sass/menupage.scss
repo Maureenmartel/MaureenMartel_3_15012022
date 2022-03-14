@@ -52,10 +52,11 @@ html, body {
       }
 
       @include desktop {
+        width: 50%;
         font-size: 98px;
         display: flex;
         justify-content: center;
-        margin-left: -140px;
+        margin-left: 19%;
       }
     }
 }
@@ -101,12 +102,15 @@ html, body {
 
   @include tablet {
     top: 383px;
+    justify-content: center;
   }
 
   @include desktop {
     width: 50%;
     align-self: center;
     top: 29%;
+    padding: 0 2%;
+    justify-content: center;
   }
 
   h1 {
@@ -119,11 +123,6 @@ html, body {
     @include tablet {
       font-size: 41px;
       padding-top: 0;
-      padding-left: 150px;
-    }
-
-    @include desktop {
-      padding-left: 430px;
     }
   }
 
