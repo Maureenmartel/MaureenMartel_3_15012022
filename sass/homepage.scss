@@ -20,16 +20,15 @@ html, body {
   width: 100%;
 
   h1 {
-    width: 510px;
     padding-top: 10px;
     font-family: $title-font;
     font-size: 45px;
     margin: 0;
   
     @include tablet {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      font-size: 65px;
+      width: 80%;
+      padding: 20px 0 20px 86px;
+      font-size: 80px;
       background: linear-gradient(to bottom right, $secondary-color, $primary-color);
       background-clip: text;
       -webkit-background-clip: text;
@@ -130,7 +129,7 @@ html, body {
     
 .btn-search {
   @include btn-gradient;
-  width: 65%;
+  width: 75%;
   height: 50px;
   font-size: 17px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
@@ -395,6 +394,7 @@ footer {
   padding-bottom: 30px;
 
     @include tablet {
+      padding-left: 4%;
       height: 305px;
     }
 

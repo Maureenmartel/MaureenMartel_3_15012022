@@ -22,16 +22,23 @@ html, body {
 
       @include tablet {
         font-size: 35px;
-        padding: 40px 0 0 70px;
+        padding: 55px 0 0 70px;
       }
     }
 
-    img {
-      padding: 30px 0 20px 50px;
-      width: 60%;
+    p {
+      width: 95%;
+      font-size: 90px;
+      font-family: $title-font;
+      margin: 0;
+      background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
 
       @include tablet {
-        padding: 30px 0 20px 150px;
+        font-size: 60px;
+        padding: 30px 0 20px 110px;
       }
     }
 }
@@ -66,7 +73,7 @@ html, body {
   top: 300px;
 
   @include tablet {
-    top: 373px;
+    top: 383px;
   }
 
   h1 {
@@ -77,9 +84,9 @@ html, body {
     padding-left: 25px;
 
     @include tablet {
-      font-size: 37px;
+      font-size: 41px;
       padding-top: 0;
-      padding-left: 70px;
+      padding-left: 150px;
     }
   }
 
@@ -90,7 +97,8 @@ html, body {
 
     @include tablet {
       font-size: 39px;
-      padding-left: 225px;
+      padding-left: 30px;
+      padding-top: 41px;
     }
   }
 }
