@@ -273,6 +273,7 @@ html, body {
   }
 
   &:hover {
+    @include btn-hover;
     cursor: pointer;
   }
 }
