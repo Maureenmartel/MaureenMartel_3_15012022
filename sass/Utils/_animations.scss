@@ -1,15 +1,18 @@
-//Animations du loader
+//Animation du loader
 @keyframes spin {
   0% {
     transform: rotate(0deg) scale(1);
+    border-width: 40px;
   }
   
   50% {
-    transform: rotate(180deg) scale(1.3);
+    transform: rotate(360deg) scale(1.3);
+    border-width: 20px;
   }
   
   100% {
-    transform: rotate(360deg) scale(1);
+    transform: rotate(720deg) scale(1);
+    border-width: 40px;
   }
 }
 
@@ -37,13 +40,36 @@
     margin: auto;
     width: 130px;
     height: 130px;
-    border: solid 16px $back-color-footer;
+    border: solid 40px $back-color-footer;
     border-top-color: $secondary-color;
     border-left-color: $tertiary-color;
     border-bottom-color: $primary-color;
-    border-radius: 35%;
+    border-radius: 40%;
     animation: spin 3s ease-in-out backwards;
   }
+}
+//Apparition des plats
+@keyframes gradually {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.block-course {
+  & :nth-child(3) {
+    animation: gradually 1s 300ms backwards;
+  }
+  & :nth-child(4) {
+    animation: gradually 1s 500ms backwards;
+  }
+  & :nth-child(5) {
+    animation: gradually 1s 700ms backwards;
+  } 
 }
 
 
