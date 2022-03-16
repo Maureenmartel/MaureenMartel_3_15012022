@@ -380,16 +380,7 @@ html, body {
       @include tablet {
         font-size: 28px;
       }
-    }
-
-    i {
-      margin-top: 20px;
-      font-size: 25px;
-
-      @include tablet {
-        font-size: 40px;
-      }
-    }
+    }   
 }
 //Footer --------------------------------------->
 footer {

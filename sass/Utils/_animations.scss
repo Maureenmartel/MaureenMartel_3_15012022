@@ -73,3 +73,49 @@
 }
 
 
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-bottom: 25px;
+
+  @include tablet {
+    padding-left: 70px;
+    padding-bottom: 40px;
+  }
+  
+  i {
+    font-size: 25px;
+
+    @include tablet {
+      font-size: 30px;
+    }
+
+    @include desktop {
+      font-size: 45px;
+    }
+  }
+  
+  :first-child {
+    position: absolute;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 800ms;
+    }
+
+    &:not(:hover) {
+      opacity: 0;
+      transition: opacity 800ms;
+    }
+  }
+}
+
+
+
