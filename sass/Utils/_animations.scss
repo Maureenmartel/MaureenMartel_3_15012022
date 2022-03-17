@@ -69,10 +69,12 @@
   }
   & :nth-child(5) {
     animation: gradually 1s 700ms backwards;
-  } 
+  }
+  & :nth-child(6) {
+    animation: gradually 1s 900ms backwards;
+  }
 }
-
-
+//Apparition des coeurs
 .like {
   display: flex;
   justify-content: center;
