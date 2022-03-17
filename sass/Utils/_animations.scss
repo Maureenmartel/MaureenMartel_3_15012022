@@ -116,6 +116,20 @@
     }
   }
 }
+//Rotation des checkboxs
+@keyframes circle-rotate {
+  0% {
+    transform: translateX(-60%) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-40%) rotate(90deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+
 
 
 
