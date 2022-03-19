@@ -61,6 +61,7 @@ html, body {
     }
 }
 //Section restaurant
+//Ajout de l'image en arrière plan sur la version desktop
 .selected {
   display: flex;
   flex-direction: column;
@@ -91,6 +92,7 @@ html, body {
     }
   }
 }
+//Gestion du placement du figcaption en tablette et desktop
 .selected-info {
   display: flex;
   background-color: $back-color-white;
@@ -174,6 +176,7 @@ html, body {
       align-self: flex-start;
     }
 }
+//Ajout de l'animation de la coche
 .meal {
   width: 90%;
   height: 85px;
@@ -208,7 +211,7 @@ html, body {
   padding: 15px 10px;
 
 }
-    
+//Ajout des points de suspension en cas de debordement du texte   
 .meal__text {
   flex-grow: 1;
   flex-basis: 215px;
@@ -260,7 +263,6 @@ html, body {
   background-color: $tertiary-color;
   margin-right: -60px;
   width: 60px;
-
 }
 
 //bouton commander
